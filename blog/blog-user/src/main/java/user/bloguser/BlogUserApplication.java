@@ -3,7 +3,6 @@ package user.bloguser;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import tk.mybatis.spring.annotation.MapperScan;
-import user.bloguser.config.EnableBlogUser;
 
 @SpringBootApplication
 @MapperScan("user.bloguser.entity")
