@@ -32,6 +32,7 @@
 		<java.version>1.8</java.version>
 		<spring-boot.version>2.1.6.RELEASE</spring-boot.version>
 		<swagger2.version>2.9.2</swagger2.version>
+		<swagger2.announce.version>1.5.22</swagger2.announce.version>
 		<lombok.version>1.18.8</lombok.version>
 		<mybatis.boot.version>2.1.0</mybatis.boot.version>
 		<tk.mybatis.version>4.1.5</tk.mybatis.version>
