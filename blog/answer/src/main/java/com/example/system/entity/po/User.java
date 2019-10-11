@@ -4,8 +4,8 @@ import javax.persistence.*;
 import lombok.Data;
 
 @Data
-@Table(name = "`answer_user`")
-public class AnswerUser {
+@Table(name = "`t_user`")
+public class User {
     @Id
     @Column(name = "`id`")
     @GeneratedValue(generator = "JDBC")

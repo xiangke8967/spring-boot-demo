@@ -109,14 +109,14 @@
         <!--            &ndash;&gt;-->
         <!--        </table>-->
 
-        <table schema="answer" tableName="answer_user"
+        <table schema="answer" tableName="t_user"
                enableInsert="true"
                enableSelectByPrimaryKey="true" enableSelectByExample="true"
                enableUpdateByPrimaryKey="true" enableUpdateByExample="true"
                enableDeleteByPrimaryKey="true" enableDeleteByExample="true"
                enableCountByExample="true">
             <generatedKey column="id" sqlStatement="JDBC"/>
-<!--            <domainObjectRenamingRule searchString="TbEros" replaceString=""/>-->
+           <domainObjectRenamingRule searchString="^T" replaceString=""/>
         </table>
 
 <!--        <table schema="blog" tableName="role"-->

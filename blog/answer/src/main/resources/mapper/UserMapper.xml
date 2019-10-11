@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.example.system.mapper.AnswerUserMapper">
-  <resultMap id="BaseResultMap" type="com.example.system.entity.po.AnswerUser">
+<mapper namespace="com.example.system.mapper.UserMapper">
+  <resultMap id="BaseResultMap" type="com.example.system.entity.po.User">
     <!--
       WARNING - @mbg.generated
     -->
@@ -79,7 +79,7 @@
     -->
     id, account, password
   </sql>
-  <select id="selectByExample" parameterType="com.example.system.entity.po.AnswerUserExample" resultMap="BaseResultMap">
+  <select id="selectByExample" parameterType="com.example.system.entity.po.UserExample" resultMap="BaseResultMap">
     <!--
       WARNING - @mbg.generated
     -->
@@ -88,7 +88,7 @@
       distinct
     </if>
     <include refid="Base_Column_List" />
-    from answer_user
+    from t_user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -96,20 +96,20 @@
       order by ${orderByClause}
     </if>
   </select>
-  <delete id="deleteByExample" parameterType="com.example.system.entity.po.AnswerUserExample">
+  <delete id="deleteByExample" parameterType="com.example.system.entity.po.UserExample">
     <!--
       WARNING - @mbg.generated
     -->
-    delete from answer_user
+    delete from t_user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
-  <select id="countByExample" parameterType="com.example.system.entity.po.AnswerUserExample" resultType="java.lang.Long">
+  <select id="countByExample" parameterType="com.example.system.entity.po.UserExample" resultType="java.lang.Long">
     <!--
       WARNING - @mbg.generated
     -->
-    select count(*) from answer_user
+    select count(*) from t_user
     <if test="_parameter != null">
       <include refid="Example_Where_Clause" />
     </if>
@@ -118,7 +118,7 @@
     <!--
       WARNING - @mbg.generated
     -->
-    update answer_user
+    update t_user
     <set>
       <if test="record.id != null">
         id = #{record.id,jdbcType=INTEGER},
@@ -138,7 +138,7 @@
     <!--
       WARNING - @mbg.generated
     -->
-    update answer_user
+    update t_user
     set id = #{record.id,jdbcType=INTEGER},
       account = #{record.account,jdbcType=VARCHAR},
       password = #{record.password,jdbcType=VARCHAR}
