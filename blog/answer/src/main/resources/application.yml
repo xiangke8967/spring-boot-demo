@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: answer
+
+  datasource:
+    username: root
+    password: Cs@123456789
+    url: jdbc:mysql://39.108.100.204:3306/answer?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=Asia/Shanghai&verifyServerCertificate=false&zeroDateTimeBehavior=CONVERT_TO_NULL
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+server:
+  port: 8001

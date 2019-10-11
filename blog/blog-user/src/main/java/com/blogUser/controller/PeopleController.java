@@ -24,6 +24,4 @@ public class PeopleController {
     public List<People> list(){
         return peopleDao.findAll();
     }
-
-
 }
