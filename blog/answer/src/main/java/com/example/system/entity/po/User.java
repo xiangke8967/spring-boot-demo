@@ -1,6 +1,8 @@
 package com.example.system.entity.po;
 
 import javax.persistence.*;
+
+import lombok.Builder;
 import lombok.Data;
 
 @Data

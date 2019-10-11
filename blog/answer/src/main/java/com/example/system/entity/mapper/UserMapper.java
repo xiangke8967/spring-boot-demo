@@ -1,4 +1,4 @@
-package com.example.system.mapper;
+package com.example.system.entity.mapper;
 
 import com.example.system.entity.po.User;
 import com.example.system.entity.po.UserExample;
